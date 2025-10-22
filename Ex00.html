@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Continuação</title>
+    <link rel="stylesheet" href="css/ex00.css">
+</head>
+<body>
+    
+    <h1 id="titulo">DOM</h1>
+    <h2>Métodos DOM</h2>
+    <p>
+        Os métodos permitem manipular elementos do documento HTML com JS
+    </p>
+    <ol>
+        <li>document.getElementById("nome_do_id") - pega o elemento do HTML vai ID.</li>
+        <li>innerHTML - inserir/alterar conteúdo. <input type="button" value="Mudar Título" onclick="mudarTitulo()"></li>
+        <li>mudar estilo - alteração de css via js. <input type="button" value="Mudar Estilo" onclick="mudarEstilo()"></li>
+        <li>class list - insere uma class no elemento em questão. </li>
+            <ul>
+                <li>.add - adiciona uma class no elemento. <input type="button" value="Destacar" onclick="destacar()"></li>
+                <li>.remove - remove uma class no elemento. <input type="button" value="Remover Destaque" onclick="remover()"></li>
+                <li>.toggle - alterna entre incerir e remover a class. <input type="button" value="Alternar" onclick="alternar()"></li>
+            </ul>
+        <li>createElement - cria elemento HTML. <button onclick="adicionarTexto()">Adicionar Texto</button></li>
+        <li>remove - remove elemento. <button onclick="removerTexto()">Remover Texto</button></li>
+    </ol>
+    <div id="container">
+
+    </div>
+    <script type="text/javascript" src="js/ex00.js"></script>
+
+</body>
+</html>
